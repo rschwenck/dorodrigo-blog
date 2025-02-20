@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
-        .post { border-bottom: 1px solid #ccc; padding: 20px; }
-    </style>
-</head>
-<body>
-    <h1>Bem-vindo ao Meu Blog</h1>
-    <div id="posts"></div>
-    
-    <script>
+   <script>
         async function loadPosts() {
             const response = await fetch('posts.json'); // JSON com links dos arquivos .md
             const posts = await response.json();
@@ -32,5 +17,3 @@
         
         loadPosts();
     </script>
-</body>
-</html>
